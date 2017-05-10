@@ -1,0 +1,129 @@
+<div class="container">
+	<div class="panel panel-info">
+		<div class="panel-heading clearfix">
+			<h4 class="panel-title text-center pull-left" style="padding-top: 7.5px;">{{user.user.name}}</h4>
+			<div class="btn-group pull-right">
+				<a href="" class="btn btn-default btn-sm" uib-tooltip="click to edit user information" data-ng-click="user.enableEditMode()" data-ng-hide="user.editMode">
+					<i class="fa fa-pencil"></i> Edit
+				</a>
+				<a href="" class="btn btn-success btn-sm" data-ng-click="user.saveUserChanges(user.userCopy)" data-ng-show="user.editMode">
+					<i class="fa fa-check"> </i> Save
+				</a>
+				<a href="" class="btn btn-danger btn-sm" data-ng-click="user.cancelUserChanges(user.user)" data-ng-show="user.editMode">
+					<i class="fa fa-times"> </i> Cancel
+				</a>
+
+
+			</div>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-3" align="center">
+					<img alt="{{user.user.email}}" 
+					ng-src="http://lorempixel.com/300/300/people"
+					class="img-circle img-responsive"
+					>
+				</div>
+				<div class="col-md-6">
+					<table class="table table-user-details">
+						<tbody>
+							<tr>
+								<td>Name:</td>
+								<td>
+									<span data-ng-hide="user.editMode">{{user.user.name}}</span>
+									<span data-ng-show="user.editMode"><input type="text" ng-model="user.userCopy.name" /></span>
+								</td>
+							</tr>
+							<tr>
+								<td>Username:</td>
+								<td>
+									<span data-ng-hide="user.editMode">{{user.user.username}}</span>
+									<span data-ng-show="user.editMode"><input type="text" ng-model="user.userCopy.username" /></span>
+								</td>
+							</tr>
+							<tr>
+								<td>Email:</td>
+								<td>{{user.user.email}}</td>
+							</tr>
+							<tr>
+								<td>Address:</td>
+								<td>
+									<table class="table table-user-details">
+										<tr>
+											<td>Street:</td>
+											<td>{{user.user.address.street}}</td>
+										</tr>
+										<tr>
+											<td>Suite:</td>
+											<td>{{user.user.address.suite}}</td>
+										</tr>
+										<tr>
+											<td>City:</td>
+											<td>{{user.user.address.city}}</td>
+										</tr>
+										<tr>
+											<td>Zip Code:</td>
+											<td>{{user.user.address.zipcode}}</td>
+										</tr>
+
+										<tr>
+											<td>Geography:</td>
+											<td>[{{user.user.address.geo.lat}},{{user.user.address.geo.lng}}]</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>Phone:</td>
+								<td>{{user.user.phone}}</td>
+							</tr>
+							<tr>
+								<td>Website:</td>
+								<td>{{user.user.website}}</td>
+							</tr>
+							<tr>
+								<td>Company:</td>
+								<td>
+									<table class="table table-user-details">
+										<tr>
+											<td>Name:</td>
+											<td>{{user.user.company.name}}</td>
+										</tr>
+										<tr>
+											<td>Catch Phrase:</td>
+											<td>{{user.user.company.catchPhrase}}</td>
+										</tr>
+										<tr>
+											<td>BS: </td>
+											<td>{{user.user.company.bs}}</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h4 class="panel-title ">{{user.user.username}}'s Posts <i class="badge">{{user.posts.length}} </i></h4>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+
+				<div class="col-sm-12" >
+					<div class="list-group" >
+						<a href="#/post-details/{{post.id}}"  data-ng-repeat="post in user.posts"
+							class="list-group-item ">
+							{{$index+1}} - <span class="text-capitalize">{{post.title}} </span>
+						</a>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

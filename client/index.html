@@ -1,0 +1,55 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PetroCloud Assignment</title>
+    <meta name="description" content="Assignment for PetroCloud">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+
+
+    <!-- build:css styles/ui.css -->
+    <link  rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link  rel="stylesheet" href="vendor/angular-toastr/dist/angular-toastr.min.css">
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="styles/main.css">
+
+
+</head>
+<body data-ng-app="mainApp" >
+
+    <div class="container" navigation-bar ></div>
+
+    <div data-ng-view></div>
+
+    <!-- build:js scripts/vendor.js -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular-route/angular-route.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/ui.js -->
+    <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="vendor/angular-toastr/dist/angular-toastr.tpls.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/app.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/comment.js"></script>
+    <script src="scripts/services/post.js"></script>
+    <script src="scripts/services/user.js"></script>
+    <script src="scripts/controllers/landing-page.js"></script>
+    <script src="scripts/controllers/post-details.js"></script>
+    <script src="scripts/controllers/user-details.js"></script>
+    <script src="scripts/directives/navigation-bar.js"></script>
+    <!-- endbuild -->
+
+</body>
+</html>

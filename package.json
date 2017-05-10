@@ -1,0 +1,28 @@
+{
+  "name": "petro-assignment",
+  "version": "1.0.0",
+  "description": "This is a small assignment for my interview that requires to write a front-end portion to communicate to a rest api and displays the results to the user.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "interview",
+    "angularjs",
+    "plugins",
+    "promises",
+    "services",
+    "awesome"
+  ],
+  "author": "Adrian Galicia",
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-open": "^0.2.3",
+    "grunt-usemin": "^3.1.1",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
