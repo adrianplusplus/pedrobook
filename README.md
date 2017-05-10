@@ -1,17 +1,19 @@
-## install
-- first make sure you have node and npm install
-    - this varies from os to os, for ubuntu
+# Petrobook
 
-- make sure bower and grunt are install globally
+## Installation/run steps
+- first make sure you have node and npm install
+    - this varies from os to os
+
+- make sure bower and grunt are installed globally
     - npm install -g grunt-cli
     - npm install -g bower
 
-- to install the required libraries for the application to run  run the following commands
+- to install the required libraries for the application to run  run the following commands inside the repo folder
     - npm install
     - bower install
 
-- after that all libraries required to run this proyect are installed, now run the following command to build and start a web server using grunt
-    - grunt build && grunt serve
+- after that all libraries required to run this proyect are installed, now run the following command to start the server with grunt
+    - grunt 
 
-- browser will open automagically on the home page
+- default browser will open automagically on the home page
 - enjoy!!!!
