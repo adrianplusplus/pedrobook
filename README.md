@@ -17,3 +17,8 @@
 
 - default browser will open automagically on the home page
 - enjoy!!!!
+
+- if browser did not open automatically
+    - open broser
+    - go to http://localhost:9000
+- enjoy!!!
